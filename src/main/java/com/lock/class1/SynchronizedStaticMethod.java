@@ -4,6 +4,8 @@ package com.lock.class1;
  * synchronized修饰静态方法
  * 
  * @author onlyone
+ * 修饰静态方法时，和修饰类一样，给这个类加锁，类的所有实例化出来的对象用的是同一把锁。
+ * 所以，线程A访问静态同步方法时，其他线程可以访问非静态同步方法和非同步方法，不可以访问静态同步方法。
  */
 public class SynchronizedStaticMethod {
 
