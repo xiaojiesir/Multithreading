@@ -10,6 +10,19 @@ import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 
+* @ClassName: ParallelComputer
+* @Description: (API介绍)public static ExecutorService newFixedThreadPool(int nThreads)
+				创建一个线程池，该线程池重用固定数量的从共享无界队列中运行的线程。 
+				在任何时候，最多nThreads线程将处于主动处理任务。
+				 如果所有线程处于活动状态时都会提交其他任务，则它们将等待队列中直到线程可用。 
+				 如果任何线程由于在关闭之前的执行期间发生故障而终止，则如果需要执行后续任务，则新线程将占用它。
+				  池中的线程将存在，直到它明确地为shutdown 。
+* @author fanghaijie
+* @date 2019年8月19日
+*
+ */
 public class ParallelComputer {
 
 	public static void main(String[] args) throws InterruptedException, ExecutionException {

@@ -25,7 +25,7 @@ public class ThreadPoolTest {
 		}
 		System.out.println(service);
 		service.shutdown();//关闭，但是需要等线程结束才可以正式关闭
-		service.shutdownNow();//立刻关闭，不管线程是否结束
+		//service.shutdownNow();//立刻关闭，不管线程是否结束
 		System.out.println(service.isTerminated());//线程是否执行完 
 		System.out.println(service.isShutdown());//是否关闭状态
 		System.out.println(service);
